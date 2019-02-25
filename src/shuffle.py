@@ -96,9 +96,9 @@ except __builtin__.Exception:
     _newclass = 0
 
 
-def shuffle_main(argc):
-    return _shuffle.shuffle_main(argc)
-shuffle_main = _shuffle.shuffle_main
+def shuffle_wrap(argc):
+    return _shuffle.shuffle_wrap(argc)
+shuffle_wrap = _shuffle.shuffle_wrap
 # This file is compatible with both classic and new-style classes.
 
 

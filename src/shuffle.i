@@ -32,7 +32,7 @@
 
 %{
 #define SWIG_FILE_WITH_INIT
-int shuffle_main(int argc, char **argv);
+int shuffle_wrap(int argc, char **argv);
 %}
 
-int shuffle_main(int argc, char **argv);
+int shuffle_wrap(int argc, char **argv);

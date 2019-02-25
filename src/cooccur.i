@@ -32,7 +32,7 @@
 
 %{
 #define SWIG_FILE_WITH_INIT
-int cooccur_main(int argc, char **argv);
+int cooccur_wrap(int argc, char **argv);
 %}
 
-int cooccur_main(int argc, char **argv);
+int cooccur_wrap(int argc, char **argv);

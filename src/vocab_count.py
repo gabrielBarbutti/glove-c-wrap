@@ -96,9 +96,9 @@ except __builtin__.Exception:
     _newclass = 0
 
 
-def vocab_count_main(argc):
-    return _vocab_count.vocab_count_main(argc)
-vocab_count_main = _vocab_count.vocab_count_main
+def vocab_count_wrap(argc):
+    return _vocab_count.vocab_count_wrap(argc)
+vocab_count_wrap = _vocab_count.vocab_count_wrap
 # This file is compatible with both classic and new-style classes.
 
 

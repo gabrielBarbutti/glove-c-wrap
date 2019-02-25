@@ -32,7 +32,7 @@
 
 %{
 #define SWIG_FILE_WITH_INIT
-int glove_main(int argc, char **argv);
+int glove_wrap(int argc, char **argv);
 %}
 
-int glove_main(int argc, char **argv);
+int glove_wrap(int argc, char **argv);

@@ -96,9 +96,9 @@ except __builtin__.Exception:
     _newclass = 0
 
 
-def glove_main(argc):
-    return _glove.glove_main(argc)
-glove_main = _glove.glove_main
+def glove_wrap(argc):
+    return _glove.glove_wrap(argc)
+glove_wrap = _glove.glove_wrap
 # This file is compatible with both classic and new-style classes.
 
 

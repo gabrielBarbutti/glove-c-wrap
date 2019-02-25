@@ -3015,7 +3015,7 @@ static swig_module_info swig_module = {swig_types, 2, 0, 0, 0, 0};
 
 
 #define SWIG_FILE_WITH_INIT
-int cooccur_main(int argc, char **argv);
+int cooccur_wrap(int argc, char **argv);
 
 
 #include <limits.h>
@@ -3178,14 +3178,14 @@ SWIGINTERNINLINE PyObject*
 #ifdef __cplusplus
 extern "C" {
 #endif
-SWIGINTERN PyObject *_wrap_cooccur_main(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_cooccur_wrap(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   int arg1 ;
   char **arg2 = (char **) 0 ;
   PyObject * obj0 = 0 ;
   int result;
   
-  if (!PyArg_ParseTuple(args,(char *)"O:cooccur_main",&obj0)) SWIG_fail;
+  if (!PyArg_ParseTuple(args,(char *)"O:cooccur_wrap",&obj0)) SWIG_fail;
   {
     /* Check if is a list */
     if (PyList_Check(obj0)) {
@@ -3211,7 +3211,7 @@ SWIGINTERN PyObject *_wrap_cooccur_main(PyObject *SWIGUNUSEDPARM(self), PyObject
       return NULL;
     }
   }
-  result = (int)cooccur_main(arg1,arg2);
+  result = (int)cooccur_wrap(arg1,arg2);
   resultobj = SWIG_From_int((int)(result));
   {
     free((char *) arg2);
@@ -3227,7 +3227,7 @@ fail:
 
 static PyMethodDef SwigMethods[] = {
 	 { (char *)"SWIG_PyInstanceMethod_New", (PyCFunction)SWIG_PyInstanceMethod_New, METH_O, NULL},
-	 { (char *)"cooccur_main", _wrap_cooccur_main, METH_VARARGS, NULL},
+	 { (char *)"cooccur_wrap", _wrap_cooccur_wrap, METH_VARARGS, NULL},
 	 { NULL, NULL, 0, NULL }
 };
 

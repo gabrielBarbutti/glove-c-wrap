@@ -3015,7 +3015,7 @@ static swig_module_info swig_module = {swig_types, 2, 0, 0, 0, 0};
 
 
 #define SWIG_FILE_WITH_INIT
-int shuffle_main(int argc, char **argv);
+int shuffle_wrap(int argc, char **argv);
 
 
 #include <limits.h>
@@ -3178,14 +3178,14 @@ SWIGINTERNINLINE PyObject*
 #ifdef __cplusplus
 extern "C" {
 #endif
-SWIGINTERN PyObject *_wrap_shuffle_main(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_shuffle_wrap(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   int arg1 ;
   char **arg2 = (char **) 0 ;
   PyObject * obj0 = 0 ;
   int result;
   
-  if (!PyArg_ParseTuple(args,(char *)"O:shuffle_main",&obj0)) SWIG_fail;
+  if (!PyArg_ParseTuple(args,(char *)"O:shuffle_wrap",&obj0)) SWIG_fail;
   {
     /* Check if is a list */
     if (PyList_Check(obj0)) {
@@ -3211,7 +3211,7 @@ SWIGINTERN PyObject *_wrap_shuffle_main(PyObject *SWIGUNUSEDPARM(self), PyObject
       return NULL;
     }
   }
-  result = (int)shuffle_main(arg1,arg2);
+  result = (int)shuffle_wrap(arg1,arg2);
   resultobj = SWIG_From_int((int)(result));
   {
     free((char *) arg2);
@@ -3227,7 +3227,7 @@ fail:
 
 static PyMethodDef SwigMethods[] = {
 	 { (char *)"SWIG_PyInstanceMethod_New", (PyCFunction)SWIG_PyInstanceMethod_New, METH_O, NULL},
-	 { (char *)"shuffle_main", _wrap_shuffle_main, METH_VARARGS, NULL},
+	 { (char *)"shuffle_wrap", _wrap_shuffle_wrap, METH_VARARGS, NULL},
 	 { NULL, NULL, 0, NULL }
 };
 

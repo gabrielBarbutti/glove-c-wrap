@@ -32,7 +32,7 @@
 
 %{
 #define SWIG_FILE_WITH_INIT
-int vocab_count_main(int argc, char **argv);
+int vocab_count_wrap(int argc, char **argv);
 %}
 
-int vocab_count_main(int argc, char **argv);
+int vocab_count_wrap(int argc, char **argv);
