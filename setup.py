@@ -7,19 +7,19 @@ setup.py file for SWIG example
 from distutils.core import setup, Extension
 
 cooccur_module = Extension('src/_cooccur',
-                           sources=['GloVe/src/cooccur.c', 'src/cooccur_wrap.c'],
+                           sources=['src/cooccur.c', 'src/cooccur_wrap.c'],
                            extra_compile_args=["-Dmain=cooccur_main"])
 
 glove_module = Extension('src/_glove',
                          sources=['GloVe/src/glove.c', 'src/glove_wrap.c'],
-                         extra_compile_args=["-Dmain=glove_main"])
+                         extra_compile_args=["-Dmain=glove_wrap"])
 
 shuffle_module = Extension('src/_shuffle',
-                           sources=['GloVe/src/shuffle.c', 'src/shuffle_wrap.c'],
+                           sources=['src/shuffle.c', 'src/shuffle_wrap.c'],
                            extra_compile_args=["-Dmain=shuffle_main"])
 
 vocab_count_module = Extension('src/_vocab_count',
-                         sources=['GloVe/src/vocab_count.c', 'src/vocab_count_wrap.c'],
+                         sources=['src/vocab_count.c', 'src/vocab_count_wrap.c'],
                          extra_compile_args=["-Dmain=vocab_count_main"])
 
 ext_mods = [cooccur_module, glove_module, shuffle_module, vocab_count_module]

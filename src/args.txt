@@ -1,0 +1,39 @@
+COOCCUR
+	-verbose*
+	-symmetric
+	-window-size
+	-vocab-file*
+	-memory*
+	-max-product
+	-overflow-length
+	-overflow-file
+	-distance-weighting
+
+GLOVE
+	-verbose*
+	-write-header
+	-vector-size
+	-threads
+	-iter
+	-eta
+	-alpha
+	-x-max
+	-binary
+	-model
+	-input-file
+	-vocab-file*
+	-save-file
+	-gradsq-file
+	-save-gradsq
+	-checkpoint-every
+
+SUFFLE
+	-verbose*
+	-memory*
+	-array-size
+	-temp-file
+
+VOCAB_COUNT
+	-verbose*
+	-max-vocab
+	-min-count

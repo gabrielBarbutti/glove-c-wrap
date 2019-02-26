@@ -96,9 +96,9 @@ except __builtin__.Exception:
     _newclass = 0
 
 
-def cooccur_main(argc):
-    return _cooccur.cooccur_main(argc)
-cooccur_main = _cooccur.cooccur_main
+def cooccur_wrap(argc):
+    return _cooccur.cooccur_wrap(argc)
+cooccur_wrap = _cooccur.cooccur_wrap
 # This file is compatible with both classic and new-style classes.
 
 

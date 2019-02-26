@@ -3015,7 +3015,7 @@ static swig_module_info swig_module = {swig_types, 2, 0, 0, 0, 0};
 
 
 #define SWIG_FILE_WITH_INIT
-int vocab_count_main(int argc, char **argv);
+int vocab_count_wrap(int argc, char **argv);
 
 
 #include <limits.h>
@@ -3178,14 +3178,14 @@ SWIGINTERNINLINE PyObject*
 #ifdef __cplusplus
 extern "C" {
 #endif
-SWIGINTERN PyObject *_wrap_vocab_count_main(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_vocab_count_wrap(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   int arg1 ;
   char **arg2 = (char **) 0 ;
   PyObject * obj0 = 0 ;
   int result;
   
-  if (!PyArg_ParseTuple(args,(char *)"O:vocab_count_main",&obj0)) SWIG_fail;
+  if (!PyArg_ParseTuple(args,(char *)"O:vocab_count_wrap",&obj0)) SWIG_fail;
   {
     /* Check if is a list */
     if (PyList_Check(obj0)) {
@@ -3211,7 +3211,7 @@ SWIGINTERN PyObject *_wrap_vocab_count_main(PyObject *SWIGUNUSEDPARM(self), PyOb
       return NULL;
     }
   }
-  result = (int)vocab_count_main(arg1,arg2);
+  result = (int)vocab_count_wrap(arg1,arg2);
   resultobj = SWIG_From_int((int)(result));
   {
     free((char *) arg2);
@@ -3227,7 +3227,7 @@ fail:
 
 static PyMethodDef SwigMethods[] = {
 	 { (char *)"SWIG_PyInstanceMethod_New", (PyCFunction)SWIG_PyInstanceMethod_New, METH_O, NULL},
-	 { (char *)"vocab_count_main", _wrap_vocab_count_main, METH_VARARGS, NULL},
+	 { (char *)"vocab_count_wrap", _wrap_vocab_count_wrap, METH_VARARGS, NULL},
 	 { NULL, NULL, 0, NULL }
 };
 
